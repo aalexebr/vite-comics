@@ -168,106 +168,118 @@ export default{
 
 <template>
   <footer>
-    <div class="container">
-        <section class="row cards">
-            <div class="col-25"
-                v-for="(element,index) in cards">
-                <div class="card row align-center">
-                    <div class="img">
-                        <img :src="element.icon" :alt="element.name">
-                    </div>
-                    <div class="title">
-                        {{element.name}}
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer-jumbo-links row align-center pos-relative">
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-4">
-                        <nav>
-                            <h4>
-                                dc comics
-                            </h4>
-                            <ul>
-                                <li v-for="(element,index) in navDcComics">
-                                    <a href="#/">
-                                    {{ element.title }}  
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav>
-                            <h4>
-                                shop
-                            </h4>
-                            <ul>
-                                <li v-for="(element,index) in navShop">
-                                    <a href="#/">
-                                    {{ element.title }}  
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-4">
-                        <nav>
-                            <h4>
-                                dc
-                            </h4>
-                            <ul>
-                                <li v-for="(element,index) in navDC">
-                                    <a href="#/">
-                                    {{ element.title }}  
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-4">
-                        <nav>
-                            <h4>
-                                sites
-                            </h4>
-                            <ul>
-                                <li v-for="(element,index) in navSites">
-                                    <a href="#/">
-                                    {{ element.title }}  
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="pos-absolute img">
-                <img src="src/assets/img/dc-logo-bg.png" alt="">
-            </div>
-            <div class="col-auto"></div>
-        </section>
-        <section class="footer-bottom row align-center space-between">
-            <div class="button">
-                <a href="#/">
-                    sign-up now
-                </a>
-            </div>
-            <div class="row align-center social-links">
-                <h4>
-                    follow us
-                </h4>
-                <ul class="row align-center">
-                    <li v-for="(element,i) in linkSocial">
-                        <div class="img">
-                            <a href="">
-                                <img :src="element.img" alt="">
-                            </a>
+    <!-- <div class="container"> -->
+        <section>
+            <div class="container">
+                <div class="row cards">
+                    <div class="col-25"
+                        v-for="(element,index) in cards">
+                        <div class="card row align-center">
+                            <div class="img">
+                                <img :src="element.icon" :alt="element.name">
+                            </div>
+                            <div class="title">
+                                {{element.name}}
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
+        <section class="footer-jumbo-links">
+            <div class="container">
+                <div class="row align-center pos-relative">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <nav>
+                                    <h4>
+                                        dc comics
+                                    </h4>
+                                    <ul>
+                                        <li v-for="(element,index) in navDcComics">
+                                            <a href="#/">
+                                            {{ element.title }}  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav>
+                                    <h4>
+                                        shop
+                                    </h4>
+                                    <ul>
+                                        <li v-for="(element,index) in navShop">
+                                            <a href="#/">
+                                            {{ element.title }}  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-4">
+                                <nav>
+                                    <h4>
+                                        dc
+                                    </h4>
+                                    <ul>
+                                        <li v-for="(element,index) in navDC">
+                                            <a href="#/">
+                                            {{ element.title }}  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-4">
+                                <nav>
+                                    <h4>
+                                        sites
+                                    </h4>
+                                    <ul>
+                                        <li v-for="(element,index) in navSites">
+                                            <a href="#/">
+                                            {{ element.title }}  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pos-absolute img">
+                        <img src="src/assets/img/dc-logo-bg.png" alt="">
+                    </div>
+                    <!-- <div class="col-auto"></div> -->
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="row align-center space-between">
+                    <div class="button">
+                        <a href="#/">
+                            sign-up now
+                        </a>
+                    </div>
+                    <div class="row align-center social-links">
+                        <h4>
+                            follow us
+                        </h4>
+                        <ul class="row align-center">
+                            <li v-for="(element,i) in linkSocial">
+                                <div class="img">
+                                    <a href="">
+                                        <img :src="element.img" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </div> -->
   </footer>
 </template>
 
@@ -277,7 +289,7 @@ export default{
 @use '../assets/scss/variables.scss' as *;
 
 footer{
-    background-image: url('src/assets/img/footer-bg.jpg');
+    // background-image: url('src/assets/img/footer-bg.jpg');
     .img{
         height: 100%;
         right: 0;
@@ -309,6 +321,7 @@ footer{
     .footer-jumbo-links{
         // @include debug-two;
         // height: 100px;
+        background-image: url('src/assets/img/footer-bg.jpg');
         color: $secondary-text-color;
         .col-4{
             // @include debug-one;

@@ -23,11 +23,11 @@ export default{
 </script>
 
 <template>
-  <div class="container">
+  <!-- <div class="container"> -->
     <headerComponent />
     <mainComponent />
     <footerComponent />
-  </div>
+  <!-- </div> -->
 </template>
 
 <style lang="scss" scoped>
