@@ -144,7 +144,7 @@ export default{
                 href:''
             },
             {   
-                img: 'src/assets/img/footer-pintrest.png',
+                img: 'src/assets/img/footer-pinterest.png',
                 href:''
             },
             {   
@@ -168,101 +168,106 @@ export default{
 
 <template>
   <footer>
-    <section class="row cards">
-        <div class="col-25"
-            v-for="(element,index) in cards">
-            <div class="card row align-center">
-                <div class="img">
-                    <img :src="element.icon" :alt="element.name">
-                </div>
-                <div class="title">
-                    {{element.name}}
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer-jumbo-links row align-center">
-        <div class="col-4">
-            <div class="row">
-                <div class="col-4">
-                    <nav>
-                        <h4>
-                            dc comics
-                        </h4>
-                        <ul>
-                            <li v-for="(element,index) in navDcComics">
-                                <a href="#/">
-                                {{ element.title }}  
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <h4>
-                            shop
-                        </h4>
-                        <ul>
-                            <li v-for="(element,index) in navShop">
-                                <a href="#/">
-                                {{ element.title }}  
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-4">
-                    <nav>
-                        <h4>
-                            dc
-                        </h4>
-                        <ul>
-                            <li v-for="(element,index) in navDC">
-                                <a href="#/">
-                                {{ element.title }}  
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-4">
-                    <nav>
-                        <h4>
-                            dc
-                        </h4>
-                        <ul>
-                            <li v-for="(element,index) in navSites">
-                                <a href="#/">
-                                {{ element.title }}  
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div class="col-auto"></div>
-    </section>
-    <section class="footer-bottom row align-center space-between">
-        <div class="button">
-            <a href="#/">
-                sign-up now
-            </a>
-        </div>
-        <div class="row align-center">
-            <h4>
-                follow us
-            </h4>
-            <ul class="row align-center">
-                <li v-for="(element,i) in linkSocial">
+    <div class="container">
+        <section class="row cards">
+            <div class="col-25"
+                v-for="(element,index) in cards">
+                <div class="card row align-center">
                     <div class="img">
-                        <a href="">
-                            <img :src="element.img" alt="">
-                        </a>
+                        <img :src="element.icon" :alt="element.name">
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                    <div class="title">
+                        {{element.name}}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-jumbo-links row align-center pos-relative">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4">
+                        <nav>
+                            <h4>
+                                dc comics
+                            </h4>
+                            <ul>
+                                <li v-for="(element,index) in navDcComics">
+                                    <a href="#/">
+                                    {{ element.title }}  
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h4>
+                                shop
+                            </h4>
+                            <ul>
+                                <li v-for="(element,index) in navShop">
+                                    <a href="#/">
+                                    {{ element.title }}  
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-4">
+                        <nav>
+                            <h4>
+                                dc
+                            </h4>
+                            <ul>
+                                <li v-for="(element,index) in navDC">
+                                    <a href="#/">
+                                    {{ element.title }}  
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-4">
+                        <nav>
+                            <h4>
+                                sites
+                            </h4>
+                            <ul>
+                                <li v-for="(element,index) in navSites">
+                                    <a href="#/">
+                                    {{ element.title }}  
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="pos-absolute img">
+                <img src="src/assets/img/dc-logo-bg.png" alt="">
+            </div>
+            <div class="col-auto"></div>
+        </section>
+        <section class="footer-bottom row align-center space-between">
+            <div class="button">
+                <a href="#/">
+                    sign-up now
+                </a>
+            </div>
+            <div class="row align-center social-links">
+                <h4>
+                    follow us
+                </h4>
+                <ul class="row align-center">
+                    <li v-for="(element,i) in linkSocial">
+                        <div class="img">
+                            <a href="">
+                                <img :src="element.img" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
   </footer>
 </template>
 
@@ -272,6 +277,14 @@ export default{
 @use '../assets/scss/variables.scss' as *;
 
 footer{
+    background-image: url('src/assets/img/footer-bg.jpg');
+    .img{
+        height: 100%;
+        right: 0;
+        img{
+            object-fit: cover;
+        }
+    }
     .cards{
         background-color: $main-color;
         padding: 40px 20px;
@@ -294,35 +307,57 @@ footer{
         }
     }
     .footer-jumbo-links{
-        @include debug-two;
+        // @include debug-two;
         // height: 100px;
+        color: $secondary-text-color;
         .col-4{
-            @include debug-one;
+            // @include debug-one;
             // height: 60px;
             h4{
                 color: white;
                 text-transform: uppercase;
                 margin: 5px 0;
             }
-            .col-4{
-                padding: 0 10px;
+            // .col-4{
+            //     padding: 0 10px;
+            // }
+            .col-4:nth-of-type(2){
+                margin: 0 20px;
             }
         }
         li{
-            list-style-type: none;
+            // list-style-type: none;
             font-size: 0.85rem;
             text-transform: capitalize;
         }
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
+        // a{
+        //     text-decoration: none;
+        //     color: inherit;
+        // }
     }
     .footer-bottom{
         height: 80px;
         @include debug-two;
-        li{
-            list-style-type: none;
+        // li{
+        //     list-style-type: none;
+        // }
+        .button a{
+            display: inline-block;
+            padding: 10px;
+            border: 3px solid $main-color;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: $main-text-color;
+        }
+        .social-links{
+            li{
+                display: inline-block;
+                padding: 10px;
+            }
+            h4{
+                text-transform: uppercase;
+                color: $main-color;
+            }
         }
     }
 }

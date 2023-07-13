@@ -32,8 +32,8 @@ export default{
 
 <style lang="scss" scoped>
 @use 'assets/scss/main.scss' as *;
-.container{
-  margin: auto;
-  max-width: 1000px;
-}
+// .container{
+//   margin: auto;
+//   max-width: 1000px;
+// }
 </style>

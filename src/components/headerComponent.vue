@@ -57,19 +57,23 @@ export default{
 </script>
 
 <template>
-  <header class="row align-center space-between">
-    <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="DC">
-    </div>
-    <nav>
-        <ul>
-            <li v-for="(element, i) in nav">
-                <a href="#/">
-                    {{element.title}}
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <header >
+    <div class="container">
+        <div class="row align-center space-between"> 
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="DC">
+            </div>
+            <nav>
+                <ul>
+                    <li v-for="(element, i) in nav">
+                        <a href="#/">
+                            {{element.title}}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>    
   </header>
 </template>
 
@@ -83,7 +87,7 @@ header{
     @include debug-one;
     padding: 5px;
    li{
-    list-style-type: none;
+    // list-style-type: none;
     display: inline-block;
     padding: 5px;
     &:hover{
@@ -91,10 +95,11 @@ header{
         color: $main-color;
     }
         a{
-            text-decoration: none;
-            color: inherit;
+            // text-decoration: none;
+            // color: inherit;
             display: inline-block;
             padding: 5px;
+            text-transform: capitalize;
         }
     }
     
