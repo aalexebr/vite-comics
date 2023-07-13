@@ -6,7 +6,12 @@ import footerComponent from './components/footerComponent.vue'
 export default{
   data(){
     return{
-
+      name: 'hello'
+    }
+  },
+  methods:{
+    getImgPath: function(imgPath){
+      return new URL (imgPath, import.meta.url).href;
     }
   },
   components:{
