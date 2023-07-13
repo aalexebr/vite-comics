@@ -23,11 +23,17 @@ export default{
 </script>
 
 <template>
-  <headerComponent />
-  <mainComponent />
-  <footerComponent />
+  <div class="container">
+    <headerComponent />
+    <mainComponent />
+    <footerComponent />
+  </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use 'assets/scss/main.scss' as *;
+.container{
+  margin: auto;
+  max-width: 1000px;
+}
 </style>
