@@ -1,0 +1,8 @@
+@mixin debug-one{
+    border: 1px dotted red;
+    background-color: lightcoral;
+}
+@mixin debug-two{
+    border: 1px dotted rgb(0, 255, 30);
+    background-color: rgb(128, 156, 240);
+}

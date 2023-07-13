@@ -28,6 +28,6 @@ export default{
   <footerComponent />
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@use 'assets/scss/main.scss' as *;
 </style>

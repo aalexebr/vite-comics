@@ -20,6 +20,6 @@ export default{
   </header>
 </template>
 
-<style scoped>
-
+<style lang="scss"scoped>
+@use '../assets/scss/debugger.scss' as *;
 </style>
