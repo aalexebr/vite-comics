@@ -24,7 +24,27 @@ export default{
             {
                 title :'games',
                 link : ''
-            }
+            },
+            {
+                title :'collectibles',
+                link : ''
+            },
+            {
+                title :'videos',
+                link : ''
+            },
+            {
+                title :'fans',
+                link : ''
+            },
+            {
+                title :'news',
+                link : ''
+            },
+            {
+                title :'shop',
+                link : ''
+            },
         ]
     }
   },
@@ -43,29 +63,9 @@ export default{
     </div>
     <nav>
         <ul>
-            <li>
+            <li v-for="(element, i) in nav">
                 <a href="#/">
-                    link
-                </a>
-            </li>
-            <li>
-                <a href="#/">
-                    link
-                </a>
-            </li>
-            <li>
-                <a href="#/">
-                    link
-                </a>
-            </li>
-            <li>
-                <a href="#/">
-                    link
-                </a>
-            </li>
-            <li>
-                <a href="#/">
-                    link
+                    {{element.title}}
                 </a>
             </li>
         </ul>
