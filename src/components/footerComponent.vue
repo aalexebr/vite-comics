@@ -186,9 +186,9 @@ export default{
                 </div>
             </div>
         </section>
-        <section class="footer-jumbo-links">
+        <section class="footer-jumbo-links pos-relative">
             <div class="container">
-                <div class="row align-center pos-relative">
+                <div class="row align-center">
                     <div class="col-4">
                         <div class="row">
                             <div class="col-4">
@@ -292,7 +292,7 @@ footer{
     // background-image: url('src/assets/img/footer-bg.jpg');
     .img{
         height: 100%;
-        right: 0;
+        right: 60px;
         img{
             object-fit: cover;
         }
@@ -321,6 +321,7 @@ footer{
     .footer-jumbo-links{
         // @include debug-two;
         // height: 100px;
+        padding: 20px;
         background-image: url('src/assets/img/footer-bg.jpg');
         color: $secondary-text-color;
         .col-4{
@@ -349,7 +350,8 @@ footer{
         // }
     }
     .footer-bottom{
-        height: 80px;
+        // height: 80px;
+        padding: 20px;
         @include debug-two;
         // li{
         //     list-style-type: none;
