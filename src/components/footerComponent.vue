@@ -133,6 +133,28 @@ export default{
                     title :'DC power visa',
                     link : ''
                 },
+        ],
+        linkSocial:[
+            {   
+                img: 'src/assets/img/footer-facebook.png',
+                href:''
+            },
+            {   
+                img: 'src/assets/img/footer-periscope.png',
+                href:''
+            },
+            {   
+                img: 'src/assets/img/footer-pintrest.png',
+                href:''
+            },
+            {   
+                img: 'src/assets/img/footer-twitter.png',
+                href:''
+            },
+            {   
+                img: 'src/assets/img/footer-youtube.png',
+                href:''
+            },
         ]
     }
   },
@@ -220,8 +242,26 @@ export default{
         </div>
         <div class="col-auto"></div>
     </section>
-    <section class="footer-bottom">
-
+    <section class="footer-bottom row align-center space-between">
+        <div class="button">
+            <a href="#/">
+                sign-up now
+            </a>
+        </div>
+        <div class="row align-center">
+            <h4>
+                follow us
+            </h4>
+            <ul class="row align-center">
+                <li v-for="(element,i) in linkSocial">
+                    <div class="img">
+                        <a href="">
+                            <img :src="element.img" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
   </footer>
 </template>
@@ -264,7 +304,9 @@ footer{
                 text-transform: uppercase;
                 margin: 5px 0;
             }
-            
+            .col-4{
+                padding: 0 10px;
+            }
         }
         li{
             list-style-type: none;
@@ -274,6 +316,13 @@ footer{
         a{
             text-decoration: none;
             color: inherit;
+        }
+    }
+    .footer-bottom{
+        height: 80px;
+        @include debug-two;
+        li{
+            list-style-type: none;
         }
     }
 }
