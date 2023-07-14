@@ -168,8 +168,7 @@ export default{
 
 <template>
   <footer>
-    <!-- <div class="container"> -->
-        <section>
+        <section class=footer-top>
             <div class="container">
                 <div class="row cards">
                     <div class="col-25"
@@ -287,16 +286,42 @@ export default{
 @use '../assets/scss/main.scss' as *;
 @use '../assets/scss/debugger.scss' as *;
 @use '../assets/scss/variables.scss' as *;
-
+@use '../assets/scss/utilities.scss' as *;
+$bottom-footer: #303030;
 footer{
-    // background-image: url('src/assets/img/footer-bg.jpg');
-    .img{
-        height: 100%;
-        right: 60px;
-        img{
-            object-fit: cover;
+    .footer-top{
+        background-color: $main-color;
+        .cards{
+                background-color: $main-color;
+                padding: 40px 20px;
+                cursor: pointer;
+            .col-25{
+                width: calc(100% / 5);
+                padding: 10px;
+                // @include debug-one;
+                .card{
+                    // @include debug-two;
+                    padding: 5px;
+                    .img{
+                        height: 45px;
+                    }
+                    .title{
+                        padding-left: 10px;
+                        text-transform: uppercase;
+                        font-size: 0.85rem;
+                        }
+                    }
+            }
         }
+
     }
+    // .img{
+    //     height: 100%;
+    //     right: 60px;
+    //     img{
+    //         object-fit: cover;
+    //     }
+    // }
     .cards{
         background-color: $main-color;
         padding: 40px 20px;
@@ -304,15 +329,17 @@ footer{
         .col-25{
             width: calc(100% / 5);
             padding: 10px;
-            @include debug-one;
+            // @include debug-one;
             .card{
-                @include debug-two;
+                // @include debug-two;
                 // height: 60px;
+                padding: 5px;
                 .img{
-                    height: 40px;
-                    margin-right: 10px;
+                    
+                    height: 45px;
                 }
                 .title{
+                    padding-left: 10px;
                     text-transform: uppercase;
                     font-size: 0.85rem;
                 }
@@ -349,11 +376,18 @@ footer{
         //     text-decoration: none;
         //     color: inherit;
         // }
+        .img{
+        height: 100%;
+        right: 60px;
+        img{
+            object-fit: cover;
+        }
+    }
     }
     .footer-bottom{
-        // height: 80px;
+        background-color: $bottom-footer;
         padding: 20px;
-        @include debug-two;
+        // @include debug-two;
         // li{
         //     list-style-type: none;
         // }

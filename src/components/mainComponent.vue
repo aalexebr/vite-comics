@@ -202,6 +202,7 @@ export default{
 @use '../assets/scss/main.scss' as *;
 @use '../assets/scss/debugger.scss' as *;
 @use '../assets/scss/variables.scss' as *;
+@use '../assets/scss/utilities.scss' as *;
 $main-text: white;
 // main:not(footer){
 //     background-color: black;
@@ -216,8 +217,8 @@ main{
   color: $main-text;
 }
 .main-jumbotron{
-  height: 200px;
-  background: url('../assets/img/jumbotron.jpg') no-repeat center center fixed;
+  height: 300px;
+  background: url('../assets/img/jumbotron.jpg') no-repeat top center;
   background-size: cover;
   // img{
   //   object-fit: cover;
@@ -227,18 +228,19 @@ main{
       padding: 10px;
       display: inline-block;
       color: $main-text;
-      top: 180px;
+      top: 280px;
+     text-transform: uppercase;
     }
 }
 .card-display{
   background-color: #202020;
   padding: 30px;
     .col-2{
-      @include debug-one;
+      // @include debug-one;
       // height: 60px;
       padding: 10px;
       .img{
-        height: 200px;
+        height: 150px;
         img{
           object-fit: cover;
         }

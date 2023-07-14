@@ -21,5 +21,15 @@ export default{
             </div>
 </template>
 
+<style lang="scss" scoped>
+.img{
+        height: 175px;
+        margin-bottom: 10px;
+        img{
+          object-fit: cover;
+        }
+      }
+</style>
+
 
 
