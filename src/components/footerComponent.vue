@@ -160,7 +160,7 @@ export default{
   },
   methods:{
     getImgPath: function(imgPath){
-      return new URL (imgPath, import.meta.url).href;
+      return new URL (`../assets/img/${imgPath}`, import.meta.url).href;
     }
   },
 }
@@ -300,6 +300,7 @@ footer{
     .cards{
         background-color: $main-color;
         padding: 40px 20px;
+        cursor: pointer;
         .col-25{
             width: calc(100% / 5);
             padding: 10px;

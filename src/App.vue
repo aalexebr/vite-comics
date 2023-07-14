@@ -30,10 +30,17 @@ export default{
   <!-- </div> -->
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use 'assets/scss/main.scss' as *;
 // .container{
 //   margin: auto;
 //   max-width: 1000px;
+// }
+// *{
+  
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//     font-family: Arial, Helvetica, sans-serif;
 // }
 </style>
