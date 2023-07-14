@@ -85,11 +85,8 @@ export default{
 
 
 header{
-    // background-color: white;
-    // @include debug-one;
     padding: 5px;
    li{
-    // list-style-type: none;
     display: inline-block;
     padding: 5px;
     &:hover{
@@ -97,8 +94,6 @@ header{
         color: $main-color;
     }
         a{
-            // text-decoration: none;
-            // color: inherit;
             display: inline-block;
             padding: 5px;
             text-transform: capitalize;

@@ -278,7 +278,6 @@ export default{
                 </div>
             </div>
         </section>
-    <!-- </div> -->
   </footer>
 </template>
 
@@ -298,9 +297,7 @@ footer{
             .col-25{
                 width: calc(100% / 5);
                 padding: 10px;
-                // @include debug-one;
                 .card{
-                    // @include debug-two;
                     padding: 5px;
                     .img{
                         height: 45px;
@@ -315,13 +312,6 @@ footer{
         }
 
     }
-    // .img{
-    //     height: 100%;
-    //     right: 60px;
-    //     img{
-    //         object-fit: cover;
-    //     }
-    // }
     .cards{
         background-color: $main-color;
         padding: 40px 20px;
@@ -329,10 +319,7 @@ footer{
         .col-25{
             width: calc(100% / 5);
             padding: 10px;
-            // @include debug-one;
             .card{
-                // @include debug-two;
-                // height: 60px;
                 padding: 5px;
                 .img{
                     
@@ -347,35 +334,23 @@ footer{
         }
     }
     .footer-jumbo-links{
-        // @include debug-two;
-        // height: 100px;
         padding: 20px;
         background-image: url('src/assets/img/footer-bg.jpg');
         color: $secondary-text-color;
         .col-4{
-            // @include debug-one;
-            // height: 60px;
             h4{
                 color: white;
                 text-transform: uppercase;
                 margin: 5px 0;
             }
-            // .col-4{
-            //     padding: 0 10px;
-            // }
             .col-4:nth-of-type(2){
                 margin: 0 20px;
             }
         }
         li{
-            // list-style-type: none;
             font-size: 0.85rem;
             text-transform: capitalize;
         }
-        // a{
-        //     text-decoration: none;
-        //     color: inherit;
-        // }
         .img{
         height: 100%;
         right: 60px;
@@ -387,10 +362,6 @@ footer{
     .footer-bottom{
         background-color: $bottom-footer;
         padding: 20px;
-        // @include debug-two;
-        // li{
-        //     list-style-type: none;
-        // }
         .button a{
             display: inline-block;
             padding: 10px;
